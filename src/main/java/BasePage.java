@@ -1,9 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.time.Duration;
+
 public class BasePage {
 
     public WebDriver driver;
     public WebDriverWait wait;
 
-    protected BasePage(Webdriver driver, WebDriverWait wait) {
+    protected BasePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofMillis(5000));
     }
@@ -13,11 +22,11 @@ public class BasePage {
     }
 
     public void close() {
-        driver.quit;
+        driver.quit();
     }
 
     protected WebElement findElement(By locator) {
-        return driver.findEleemnt(locator);
+        return driver.findElement(locator);
     }
 
     protected void sendText(String inputText, By locator) {
