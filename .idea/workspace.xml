@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04c74f3c-254e-491e-9fdc-ebb3e0fddc8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AccountOverviewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AccountsOverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccountsOverviewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/NewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewAccountPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +35,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.AccountOverviewTest.executor": "Debug",
+    "JUnit.AccountOverviewTest.executor": "Run",
     "JUnit.AccountOverviewTest.overviewExitoso.executor": "Run",
+    "JUnit.NewAccountTest.newAccountExitoso.executor": "Run",
     "JUnit.RegisterTest.executor": "Run",
     "JUnit.RegisterTest.registerTestExitoso.executor": "Run",
     "JUnit.RegisterTest.registerTestFallido.executor": "Run",
@@ -57,7 +54,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AccountOverviewTest">
+  <component name="RunManager" selected="JUnit.NewAccountTest.newAccountExitoso">
     <configuration name="AccountOverviewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="repo_Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,11 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NewAccountTest.newAccountExitoso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="repo_Test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="NewAccountTest" />
+      <option name="METHOD_NAME" value="newAccountExitoso" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NewAccountTest.newAccountExitoso" />
         <item itemvalue="JUnit.AccountOverviewTest" />
         <item itemvalue="JUnit.RegisterTest.registerTestExitoso" />
         <item itemvalue="JUnit.AccountOverviewTest.overviewExitoso" />
         <item itemvalue="JUnit.RegisterTest.registerTestFallido" />
-        <item itemvalue="JUnit.RegisterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +132,7 @@
       <updated>1724199099086</updated>
       <workItem from="1724199099788" duration="4803000" />
       <workItem from="1724243233308" duration="6341000" />
-      <workItem from="1724274485870" duration="1712000" />
+      <workItem from="1724274485870" duration="3196000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ public class NewAccountPage extends BasePage{
     private By accountType = By.xpath("//*[@id=\"type\"]");
     private By openButtom = By.linkText("Open New Account");
 
-    private By congrats = By.linkText("Congratulations, your account is now open.");
+    private By congrats = By.xpath("//*[@id=\"openAccountResult\"]/p[1]");
 
     protected NewAccountPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -18,12 +18,16 @@ public class NewAccountPage extends BasePage{
         this.click(openNewAccount);
     }
 
-    public void writeEmail(String type) throws InterruptedException {
-        this.sendText(type,accountType);
+    public void writeType(String type) throws InterruptedException {
+        this.sendKey(type,accountType);
     }
 
     public void clickOpenAccount() throws InterruptedException  {
         this.click(openButtom);
+    }
+
+    public String nowOpen() throws InterruptedException  {
+        return this.getText(congrats);
     }
 
 
