@@ -1,9 +1,10 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AccountsOverviewPage extends BasePage {
-    private By accountOverview = By.xpath("//*[@id=\"leftPanel\"]/ul/li[2]/a");
+    private By accountOverview = By.linkText("Accounts Overview");
     private By note = By.xpath("//*[@id=\"accountTable\"]/tfoot/tr/td");
 
     private By accountNumber = By.xpath("//*[@id=\"accountTable\"]/tbody/tr[1]/td[1]/a");
@@ -36,11 +37,11 @@ public class AccountsOverviewPage extends BasePage {
     }
 
     public void writePeriod(String activity) throws InterruptedException {
-        this.sendText(activity, activityPeriod);
+        this.sendKey(Keys.EQUALS,activityPeriod);
     }
 
     public void writeType(String type) throws InterruptedException {
-        this.sendText(type,activityType);
+        this.sendKey(Keys.EQUALS,activityType);
     }
 
     public void clickGo() throws InterruptedException  {

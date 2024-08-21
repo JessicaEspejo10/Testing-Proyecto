@@ -34,7 +34,7 @@ public class RegisterTest {
         registerPage.writeZipCode("111911");
         registerPage.writePhone("7626543");
         registerPage.writeSsn("123");
-        registerPage.writeUsername("Sergio123");
+        registerPage.writeUsername("Sergio4");
         registerPage.writePassword("123456");
         registerPage.confirmPassword("123456");
 
