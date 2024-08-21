@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class RegisterPage extends BasePage{
+public class RegisterPage extends BasePage {
 
         private By inicia_registro = By.xpath("//*[@id=\"loginPanel\"]/p[2]/a");
         private By first_name = By.id("customer.firstName");
@@ -16,17 +16,17 @@ public class RegisterPage extends BasePage{
 
         private By username = By.id("customer.username");
         private By password = By.id("customer.password");
-        private By confirm = By.id("repeatedPassword");
+        private By passwordconf = By.id("repeatedPassword");
 
-        private By matchPswd = By.id("repeatedPassword.errors");
+        private By passworderror = By.className("error");
 
-        private By finaliza_registro = By.linkText("REGISTER");
+        private By finaliza_registro = By.xpath("//*[@id=\"customerForm\"]/table/tbody/tr[13]/td[2]/input");
 
         private By bienvenido = By.className("title");
-        private By saludo = By.linkText("Your account was created successfully. You are now logged in.");
+        private By saludo = By.xpath("//*[@id=\"rightPanel\"]/p");
 
 
-        protected RegisterPage(WebDriver driver, WebDriverWait wait) {
+        public RegisterPage(WebDriver driver, WebDriverWait wait) {
                 super(driver, wait);
         }
 
@@ -65,13 +65,17 @@ public class RegisterPage extends BasePage{
                 this.sendText(pwd, password);
         }
 
+        public void confirmPassword(String matchpwd) throws InterruptedException {
+                this.sendText(matchpwd, passwordconf);
+        }
+
         public void clickRegister() throws InterruptedException  {
                 this.click(finaliza_registro);
         }
 
         public String matchingPasswords() throws InterruptedException {
-                System.out.println("MENSAJE DE ERROR: " + this.getText(matchPswd));
-                return this.getText(matchPswd);
+                System.out.println("Resultado Card value: " + this.getText(passworderror));
+                return this.getText(passworderror);
         }
 
         public String welcome() throws InterruptedException {
@@ -79,7 +83,7 @@ public class RegisterPage extends BasePage{
                 return this.getText(bienvenido);
         }
 
-        public String hello() throws InterruptedException {
+        public String success() throws InterruptedException {
                 System.out.println("MENSAJE DE SALUDO: " + this.getText(saludo));
                 return this.getText(saludo);
         }
