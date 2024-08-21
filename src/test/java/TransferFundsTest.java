@@ -55,6 +55,7 @@ public class TransferFundsTest {
         transferFundsPage.setFrom("28773");
         transferFundsPage.setTo("28884");
         transferFundsPage.clickCompleteTransfer();
+        transferFundsPage.completeMessage();
 
 
 
