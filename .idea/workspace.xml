@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04c74f3c-254e-491e-9fdc-ebb3e0fddc8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/reports/ExtentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccountsOverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccountsOverviewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NewAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TransferFundsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TransferFundsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AccountOverviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountOverviewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NewAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NewAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegisterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TransferFundsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TransferFundsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testGoogle.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +44,14 @@
   "keyToString": {
     "JUnit.AccountOverviewTest.executor": "Run",
     "JUnit.AccountOverviewTest.overviewExitoso.executor": "Run",
+    "JUnit.NUEVA CUENTA.executor": "Run",
     "JUnit.NewAccountTest.newAccountExitoso.executor": "Run",
+    "JUnit.REGISTRO.executor": "Run",
+    "JUnit.RESUMEN.executor": "Run",
     "JUnit.RegisterTest.executor": "Run",
     "JUnit.RegisterTest.registerTestExitoso.executor": "Run",
     "JUnit.RegisterTest.registerTestFallido.executor": "Run",
+    "JUnit.TRANSFERENCIA.executor": "Run",
     "JUnit.TransferFundsTest.transferFundsExitoso.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -54,63 +67,60 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TransferFundsTest.transferFundsExitoso">
-    <configuration name="AccountOverviewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="repo_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountOverviewTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountOverviewTest.overviewExitoso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="repo_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountOverviewTest" />
-      <option name="METHOD_NAME" value="overviewExitoso" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewAccountTest.newAccountExitoso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="repo_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewAccountTest" />
-      <option name="METHOD_NAME" value="newAccountExitoso" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterTest.registerTestExitoso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="repo_Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
-      <option name="METHOD_NAME" value="registerTestExitoso" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransferFundsTest.transferFundsExitoso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NUEVA CUENTA">
+    <configuration name="NUEVA CUENTA" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="repo_Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TransferFundsTest" />
       <option name="METHOD_NAME" value="transferFundsExitoso" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="tags" />
+      <tag value="NUEVA_CUENTA" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="REGISTRO" type="JUnit" factoryName="JUnit">
+      <module name="repo_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegisterTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="tags" />
+      <tag value="REGISTRO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RESUMEN" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="repo_Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountOverviewTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="tags" />
+      <tag value="RESUMEN" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TRANSFERENCIA" type="JUnit" factoryName="JUnit">
+      <module name="repo_Test" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="tags" />
+      <tag value="TRANSFERENCIA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TRANSFERENCIA" />
+      <item itemvalue="JUnit.REGISTRO" />
+      <item itemvalue="JUnit.RESUMEN" />
+      <item itemvalue="JUnit.NUEVA CUENTA" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TransferFundsTest.transferFundsExitoso" />
-        <item itemvalue="JUnit.NewAccountTest.newAccountExitoso" />
-        <item itemvalue="JUnit.AccountOverviewTest" />
-        <item itemvalue="JUnit.RegisterTest.registerTestExitoso" />
-        <item itemvalue="JUnit.AccountOverviewTest.overviewExitoso" />
+        <item itemvalue="JUnit.NUEVA CUENTA" />
+        <item itemvalue="JUnit.RESUMEN" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +142,7 @@
       <updated>1724199099086</updated>
       <workItem from="1724199099788" duration="4803000" />
       <workItem from="1724243233308" duration="6341000" />
-      <workItem from="1724274485870" duration="5074000" />
+      <workItem from="1724274485870" duration="15661000" />
     </task>
     <servers />
   </component>

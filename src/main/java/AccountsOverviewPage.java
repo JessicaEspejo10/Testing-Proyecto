@@ -3,7 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AccountsOverviewPage extends BasePage {
+public class AccountsOverviewPage extends RegisterPage {
     private By accountOverview = By.linkText("Accounts Overview");
     private By note = By.xpath("//*[@id=\"accountTable\"]/tfoot/tr/td");
 
@@ -47,5 +47,30 @@ public class AccountsOverviewPage extends BasePage {
     public void clickGo() throws InterruptedException  {
         this.click(confirm);
     }
-    
+
+    //login
+    private By user = By.xpath("//*[@id=\"loginPanel\"]/form/div[1]/input");
+    private By passwordlogin = By.xpath("//*[@id=\"loginPanel\"]/form/div[2]/input");
+
+    private By login = By.xpath("//*[@id=\"loginPanel\"]/form/div[3]/input");
+
+    private By loginerror = By.xpath("//*[@id=\"rightPanel\"]/h1");
+
+
+    public void writeUser(String name) throws InterruptedException {
+        this.sendText(name, user);
+    }
+
+    public void writePasswordlogin(String contraseña) throws InterruptedException {
+        this.sendText(contraseña, passwordlogin);
+    }
+
+    public void login() throws InterruptedException {
+        this.click(login);
+    }
+
+    public String error() throws InterruptedException {
+        System.out.println("Resultado Card value: " + this.getText(loginerror));
+        return this.findElement(loginerror).getText();
+    }
 }
